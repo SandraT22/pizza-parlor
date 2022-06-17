@@ -1,10 +1,11 @@
 //Business Logic
 
-function Pizza(number, size) {
-  this.numberOfToppings = number;
-  // this.toppings = toppings;
+function Pizza(toppings, size) {
+  this.toppingsArray = toppings;
   this.size = size;
 }
+
+// Pizza.prototype.
 
 Pizza.prototype.pizzaPrice = function() {
   const toppings1Small = "$10"
@@ -13,17 +14,17 @@ Pizza.prototype.pizzaPrice = function() {
   const toppings3Medium = "$25"
   const toppings1Large = "$30"
   const toppings3Large = "$35"
-  if (this.numberOfToppings > 1 && this.size === "small") {
+  if (this.toppingsArray.length > 1 && this.size === "small") {
     return toppings3Small;
-  } else if (this.numberOfToppings <= 1 && this.size === "small") {
+  } else if (this.toppingsArray.length <= 1 && this.size === "small") {
     return toppings1Small;
-  } else if (this.numberOfToppings <= 1 && this.size === "medium") {
+  } else if (this.toppingsArray.length <= 1 && this.size === "medium") {
     return toppings1Medium;
-  } else if (this.numberOfToppings > 1 && this.size === "medium") {
+  } else if (this.toppingsArray.length > 1 && this.size === "medium") {
     return toppings3Medium;
-  } else if (this.numberOfToppings <= 1 && this.size === "large") {
+  } else if (this.toppingsArray.length <= 1 && this.size === "large") {
     return toppings1Large;
-  } else if (this.numberOfToppings > 1 && this.size === "large") {
+  } else if (this.toppingsArray.length > 1 && this.size === "large") {
     return toppings3Large;
   } else {
     return "Please enter pizza Info"
@@ -38,13 +39,18 @@ Pizza.prototype.pizzaPrice = function() {
 $(document).ready(function() {
   $("form#pizzaOrder").submit(function(event) {
     event.preventDefault();
-    const toppingsNumber = $("select#toppingsNumber").val();
-    const toppings = $("input:checkbox[name=toppings]:checked").val();
+    let toppings = [];
+    $("input:checkbox[name=toppings]:checked").each(function(){
+      const allToppings = $(this).val();
+      toppings.push(allToppings);
+    })
+      console.log(toppings);
     const pizzaSize = $("select#size").val();
-    console.log("testing");
-    let pizzaOrder = new Pizza(toppingsNumber, pizzaSize);
+      console.log(pizzaSize);
+    let pizzaOrder = new Pizza(toppings, pizzaSize);
     console.log(pizzaOrder);
     let pizzaOrderPrice = pizzaOrder.pizzaPrice();
+    console.log(pizzaOrderPrice)
     $("#pizzaPrice").append("<p>" + "Pizza Price:" + pizzaOrderPrice + "</p>");
   })
 });
