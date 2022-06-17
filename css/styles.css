@@ -14,4 +14,22 @@ img {
 
 h1 { 
   font-family: 'Prata', serif;
+  font-size: 3rem;
+  text-align: center;
 }
+
+h3 {
+ color: gray;
+ text-align: center;
+}
+
+#pizzaPrice {
+  font-size: larger;
+  color: darkred;
+}
+button {
+  background-color: rgb(114,160,193);
+  border-radius: 1rem;
+}
+
+ 
