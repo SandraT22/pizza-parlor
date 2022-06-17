@@ -30,19 +30,21 @@ Pizza.prototype.pizzaPrice = function() {
   }
 }
 
-let pizza1 = new Pizza("3", "pepperoni", "cheese", "pineapple", "small");
-let pizza2 = new Pizza("1", "pepperoni", "small");
+// let pizza1 = new Pizza("3", "pepperoni", "cheese", "pineapple", "small");
+// let pizza2 = new Pizza("1", "pepperoni", "small");
 
 //UI Logic
 
 $(document).ready(function() {
   $("from#pizzaOrder").submit(function(event) {
-    event.preventDefaunt();
+    event.preventDefault();
     const toppingsNumber = $("select#toppingsNumber").val();
     const toppings = $("input:checkbox[name=toppings]:checked").val();
     const pizzaSize = $("select#size").val();
+
     let pizzaOrder = new Pizza(toppingsNumber, pizzaSize);
     let pizzaOrderPrice = pizzaOrder.pizzaPrice();
+    console.log(pizzaOrderPrice);
     $("#pizzaPrice").append("<p>" + "Pizza Price:" + pizzaOrderPrice + "</p>");
   })
-})
+});
