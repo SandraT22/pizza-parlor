@@ -17,10 +17,13 @@
         <input type="checkbox" name="toppings" value="extra cheese"> Extra Cheese <br>
         <input type="checkbox" name="toppings" value="Pineapple"> Pineapple <br>
         <br>
-        <p>Choose your pizza crust style</p>
-        <input type="checkbox" name="crust" value="thin"> Thin Crust <br>
-        <input type="checkbox" name="crust" value="regular"> Regular <br>
-        <input type="checkbox" name="crust" value="deep"> Deep Dish <br>
+        <label id="crust">Choose the style of crust you would like</label>
+        <select id="crust">
+          <option value="none" disabled hidden selected>Select</option>
+          <option value="thin">Thin Crust</option>
+          <option value="regular">Regular Crust</option>
+          <option value="deep">Deep Dish</option>
+        </select>
         <br>
         <label id="size">Choose the size of your pizza</label>
         <select id="size">
