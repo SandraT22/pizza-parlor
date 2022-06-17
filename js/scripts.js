@@ -1,32 +1,77 @@
 //Business Logic
 
-function Pizza(toppings, size) {
+function Pizza(toppings, crust, size) {
   this.toppingsArray = toppings;
+  this.crustArray = crust
   this.size = size;
 }
 
 
 
 Pizza.prototype.pizzaPrice = function() {
-  const toppings1Small = "$10"
-  const toppings3Small = "$15"
-  const toppings1Medium = "$20"
-  const toppings3Medium = "$25"
-  const toppings1Large = "$30"
-  const toppings3Large = "$35"
-  if (this.toppingsArray.length > 1 && this.size === "small") {
+  const toppings1Small = 10
+  const toppings3Small = 15
+  const toppings1Medium = 20
+  const toppings3Medium = 25
+  const toppings1Large = 30
+  const toppings3Large = 35
+  const thinCrust = 2
+  const deepDish = 4
+  if (this.toppingsArray.length > 1 && this.crustArray.includes("regular") && this.size === "small") {
     return toppings3Small;
-  } else if (this.toppingsArray.length === 1 && this.size === "small") {
+  } 
+  else if (this.toppingsArray.length === 1 && this.crustArray.includes("regular")  && this.size === "small") {
     return toppings1Small;
-  } else if (this.toppingsArray.length === 1 && this.size === "medium") {
+  } 
+  else if (this.toppingsArray.length === 1 && this.crustArray.includes("regular") && this.size === "medium") {
     return toppings1Medium;
-  } else if (this.toppingsArray.length > 1 && this.size === "medium") {
+  } 
+  else if (this.toppingsArray.length > 1 && this.crustArray.includes("regular") && this.size === "medium") {
     return toppings3Medium;
-  } else if (this.toppingsArray.length === 1 && this.size === "large") {
+  } 
+  else if (this.toppingsArray.length === 1 && this.crustArray.includes("regular") && this.size === "large") {
     return toppings1Large;
-  } else if (this.toppingsArray.length > 1 && this.size === "large") {
+  } 
+  else if (this.toppingsArray.length > 1 && this.crustArray.includes("regular") && this.size === "large") {
     return toppings3Large;
-  } else {
+  } 
+  else if (this.toppingsArray.length > 1 && this.crustArray.includes("thin") && this.size === "small") {
+    return toppings3Small + thinCrust;
+  } 
+  else if (this.toppingsArray.length === 1 && this.crustArray.includes("thin")  && this.size === "small") {
+    return toppings1Small + thinCrust;
+  } 
+  else if (this.toppingsArray.length === 1 && this.crustArray.includes("thin") && this.size === "medium") {
+    return toppings1Medium + thinCrust;
+  } 
+  else if (this.toppingsArray.length > 1 && this.crustArray.includes("thin") && this.size === "medium") {
+    return toppings3Medium + thinCrust;
+  } 
+  else if (this.toppingsArray.length === 1 && this.crustArray.includes("thin") && this.size === "large") {
+    return toppings1Large + thinCrust;
+  } 
+  else if (this.toppingsArray.length > 1 && this.crustArray.includes("thin") && this.size === "large") {
+    return toppings3Large + thinCrust;
+  } 
+  else if (this.toppingsArray.length > 1 && this.crustArray.includes("deep") && this.size === "small") {
+    return toppings3Small + deepDish;
+  } 
+  else if (this.toppingsArray.length === 1 && this.crustArray.includes("deep")  && this.size === "small") {
+    return toppings1Small + deepDish;
+  } 
+  else if (this.toppingsArray.length === 1 && this.crustArray.includes("deep") && this.size === "medium") {
+    return toppings1Medium + deepDish;
+  } 
+  else if (this.toppingsArray.length > 1 && this.crustArray.includes("deep") && this.size === "medium") {
+    return toppings3Medium + deepDish;
+  } 
+  else if (this.toppingsArray.length === 1 && this.crustArray.includes("deep") && this.size === "large") {
+    return toppings1Large + deepDish;
+  } 
+  else if (this.toppingsArray.length > 1 && this.crustArray.includes("deep") && this.size === "large") {
+    return toppings3Large + deepDish;
+  }
+  else {
     return "Please enter pizza Info"
   }
 }
@@ -42,6 +87,12 @@ $(document).ready(function() {
       const allToppings = $(this).val();
       toppings.push(allToppings);
     })
+    let crust = [];
+    $("input:checkbox[name=crust]:checked").each(function(){
+      const allCrusts = $(this).val();
+      crust.push(allCrusts);
+    })
+    console.log(crust);
     const pizzaSize = $("select#size").val();
     let pizzaOrder = new Pizza(toppings, pizzaSize);
     let pizzaOrderPrice = pizzaOrder.pizzaPrice();
