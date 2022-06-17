@@ -26,7 +26,6 @@ Pizza.prototype.pizzaPrice = function() {
   } else if (this.size === "large") {
     totalCharge += largeSize;
   }
-  console.log(totalCharge);
   if (this.crust === "regular") {
     totalCharge += regularCust;
   } else if (this.crust === "thin") {
@@ -48,7 +47,6 @@ $(document).ready(function() {
       toppings.push(allToppings);
     });
     const crust = $("Select#crust").val();
-    console.log(crust);
     const pizzaSize = $("select#size").val();
     let pizzaOrder = new Pizza(toppings, crust, pizzaSize);
     let pizzaOrderPrice = pizzaOrder.pizzaPrice();
