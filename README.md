@@ -8,7 +8,7 @@
 * Bootstrap
 * JavaScript
 ## Description
-_This simple html website allows users to view the price of a pizza after they have entered their chosen toppings and size preference._
+_This simple html website allows users choose between one and three pizza topping options, one of three crust style options and one of three pizza size options. The user will then click "Check Price" to view the price of a pizza depending on the options they have chosen._
 ## Setup/Installation Requirements
 * Clone this repository to your desktop. 
 * Navigate to the top level of the directory. 
