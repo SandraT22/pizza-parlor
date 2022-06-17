@@ -21,12 +21,12 @@ Pizza.prototype.pizzaPrice = function() {
 
   if (this.size === "small") {
     totalCharge += smallSize;
-  } else if (this.size === "medium ") {
+  } else if (this.size === "medium") {
     totalCharge += mediumSize;
   } else if (this.size === "large") {
     totalCharge += largeSize;
   }
-
+  console.log(totalCharge);
   if (this.crust === "regular") {
     totalCharge += regularCust;
   } else if (this.crust === "thin") {
@@ -34,8 +34,8 @@ Pizza.prototype.pizzaPrice = function() {
   } else if (this.crust === "deep") {
     totalCharge += deepDish;
   }
-
-  return totalCharge
+  return totalCharge;
+}
 //   const toppings1Small = 10
 //   const toppings3Small = 15
 //   const toppings1Medium = 20
@@ -130,7 +130,7 @@ $(document).ready(function() {
     $("input:checkbox[name=toppings]:checked").each(function(){
       const allToppings = $(this).val();
       toppings.push(allToppings);
-    })
+    });
     const crust = $("Select#crust").val();
     console.log(crust);
     const pizzaSize = $("select#size").val();
