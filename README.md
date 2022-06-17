@@ -18,13 +18,19 @@ _This simple html website allows users to view the price of a pizza after they h
 ## GitHub Page Link
 <!-- LINK HERE -->
 ## Test Driven Development
-#### Describe: 
-##### Test: 
-##### Code: 
-##### Expected Output: 
-##### Test: 
-##### Code: 
-##### Expected Output: 
+<!-- #### Describe: pizza()
+##### Test: Test will confirm that the pizza constructor works. 
+##### Code: let pizza1 = new pizza(topping1, topping2, topping3, size)
+##### Expected Output: Pizza {
+  topping1: 
+  topping2: 
+  topping3:
+  Size: 
+} -->
+<!-- #### Describe: pizza.pizzaCost()
+##### Test: Test will check if the pizzaCost prototype works. 
+##### Code: pizza.pizzaCost(pizza1)
+##### Expected Output: "$10", "$15" -->
 ##### Test: 
 ##### Code: 
 ##### Expected Output: 

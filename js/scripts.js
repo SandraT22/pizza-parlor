@@ -1,6 +1,8 @@
-function Pizza(number,toppings, size) {
+//Business Logic
+
+function Pizza(number, size) {
   this.numberOfToppings = number;
-  this.toppings = toppings;
+  // this.toppings = toppings;
   this.size = size;
 }
 
@@ -29,4 +31,18 @@ Pizza.prototype.pizzaPrice = function() {
 }
 
 let pizza1 = new Pizza("3", "pepperoni", "cheese", "pineapple", "small");
-let pizza2 = new Pizza("3", "pepperoni", "small");
+let pizza2 = new Pizza("1", "pepperoni", "small");
+
+//UI Logic
+
+$(document).ready(function() {
+  $("from#pizzaOrder").submit(function(event) {
+    event.preventDefaunt();
+    const toppingsNumber = 
+    const toppings = 
+    const pizzaSize = 
+    let pizzaOrder = new Pizza(toppingsNumber, pizzaSize);
+    let pizzaOrderPrice = pizzaOrder.pizzaPrice();
+    $("#pizzaPrice").append("<p>" + "Pizza Price:" + pizzaOrderPrice + "</p>");
+  })
+})
