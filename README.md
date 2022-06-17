@@ -1,4 +1,4 @@
-# Mr. Pizza Parlor
+# Pizza Parlor
 #### By: Sandra Tena
 #### A simple html website that displays the price of a pizza to the user. 
 ## Technologies Used
