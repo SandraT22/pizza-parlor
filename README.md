@@ -8,13 +8,13 @@
 * Bootstrap
 * JavaScript
 ## Description
-_This simple html website allows users choose between one and three pizza topping options, one of three crust style options and one of three pizza size options. The user will then click "Check Price" to view the price of a pizza depending on the options they have chosen._
+_This simple html website allows users to choose between one and three pizza topping options, one of three crust style options, and one of three pizza size options. The user will then click "Check Price" to view the price of a pizza depending on the options they have chosen._
 ## Setup/Installation Requirements
 * Clone this repository to your desktop. 
 * Navigate to the top level of the directory. 
 * Open index.html in your browser. 
 ## Known Bugs
-<!-- * BUGS HERE  -->
+* No known bugs
 ## GitHub Page Link
 <!-- LINK HERE -->
 ## Test Driven Development
@@ -28,10 +28,10 @@ _This simple html website allows users choose between one and three pizza toppin
   Size: 
 }
 #### Describe: pizza.pizzaCost()
-##### Test: Test will check if the pizzaCost prototype works. 
+##### Test: Test will check if the pizzaPrice prototype works. 
 ##### Code: pizza1.pizzaPrice();
 ##### Expected Output: "$10", "$15"
-##### Test: Test will check if the user input for toppings can be used within the prototype function to determin the number of toppings. 
+##### Test: Test will check if the user input for toppings can be used within the prototype function to determine the number of toppings. 
 ##### Code: pizza.pizzaPrice();
 ##### Expected Output: "$10" -> "$35"
 ##### Test: Test will check if the user input for crust can be used within the prototype function to add an extra charge to the total depending on their choice. 
