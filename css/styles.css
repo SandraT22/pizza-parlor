@@ -1,0 +1,17 @@
+body {
+  background-color: rgb(202,255,189);
+}
+
+html {
+  background-color: rgb(202,255,189);
+  background-image: url(/img/tomato.gif);
+}
+
+img {
+  height: 20rem;
+  min-height: 200%;
+}
+
+h1 { 
+  font-family: 'Prata', serif;
+}

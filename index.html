@@ -10,7 +10,11 @@
   <body>
     <div class="container">
       <h1>Simply Delicious Pizza Parlor</h1>
-      <h5>Fill in the items below to check the price of your delicious pizza!</h5>
+      <h3>Nature's Recipes at your Door!</h3>
+      <img class="rounded" src="img/pizzaOven.jpg" alt="Photo of man putting pizza in an outdoor, wood-burning, brick oven.">
+      <br>
+      <h6>Fill in the items below to check the price of your delicious pizza!</h6>
+      <br>
       <form id="pizzaOrder">
         <p>Choose your toppings</p>
         <input type="checkbox" name="toppings" value="pepperoni"> Pepperoni <br>
@@ -18,12 +22,14 @@
         <input type="checkbox" name="toppings" value="Pineapple"> Pineapple <br>
         <br>
         <label id="crust">Choose the style of crust you would like</label>
-        <select id="crust">
-          <option value="none" disabled hidden selected>Select</option>
-          <option value="thin">Thin Crust</option>
-          <option value="regular">Regular Crust</option>
-          <option value="deep">Deep Dish</option>
-        </select>
+        <div class="dropdown">
+          <select id="crust">
+            <option value="none" disabled hidden selected>Select</option>
+            <option value="thin">Thin Crust</option>
+            <option value="regular">Regular Crust</option>
+            <option value="deep">Deep Dish</option>
+          </select>
+        </div>
         <br>
         <label id="size">Choose the size of your pizza</label>
         <select id="size">
