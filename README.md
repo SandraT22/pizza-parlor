@@ -37,6 +37,9 @@ _This simple html website allows users choose between one and three pizza toppin
 ##### Test: Test will check if the user input for crust can be used within the prototype function to add an extra charge to the total depending on their choice. 
 ##### Code: pizza.pizzaPrice();
 ##### Expected Output: "$12" -> "$39"
+##### Test: Test will check if refactored prototype function works. 
+##### Code: pizza.pizzaPrice();
+##### Expected Output: "$11" -> "$27"
 ## License
 _If you have any questions or concerns, please feel free to reach out to me [via email at: sandratena06@gmail.com](mailto:sandratena06@gmail.com) or request to make a contribution. Thank you!_ 
 #### The MIT License (MIT)
