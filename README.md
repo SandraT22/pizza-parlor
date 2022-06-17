@@ -1,0 +1,80 @@
+# Mr. Roboger's Neighborhood
+#### By: Sandra Tena
+#### A simple html website that displays the price of a pizza to the user. 
+## Technologies Used
+* HTML
+* CSS
+* JQuery
+* Bootstrap
+* JavaScript
+## Description
+_This simple html website allows users to view the price of a pizza after they have entered their chosen toppings and size preference._
+## Setup/Installation Requirements
+* Clone this repository to your desktop. 
+* Navigate to the top level of the directory. 
+* Open index.html in your browser. 
+## Known Bugs
+<!-- * BUGS HERE  -->
+## GitHub Page Link
+<!-- LINK HERE -->
+## Test Driven Development
+#### Describe: 
+##### Test: 
+##### Code: 
+##### Expected Output: 
+##### Test: 
+##### Code: 
+##### Expected Output: 
+##### Test: 
+##### Code: 
+##### Expected Output: 
+ ##### Test: 
+##### Code: 
+##### Expected Output:
+##### Test: 
+##### Code: 
+##### Expected Output:
+##### Test: 
+##### Code: 
+##### Expected Output: 
+##### Test: 
+##### Code: 
+##### Expected Output:
+##### Test: 
+##### Code: 
+##### Expected Output:
+## License
+_If you have any questions or concerns, please feel free to reach out to me [via email at: sandratena06@gmail.com](mailto:sandratena06@gmail.com) or request to make a contribution. Thank you!_ 
+#### The MIT License (MIT)
+
+Copyright (c) 2011-2022 Twitter, Inc.
+Copyright (c) 2011-2022 The Bootstrap Authors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+The MIT License (MIT)
+
+Copyright (c) 2015 The jQuery Foundation
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+#### Copyright (c) 2022 Sandra Tena
