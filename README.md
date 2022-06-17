@@ -18,7 +18,7 @@ _This simple html website allows users to view the price of a pizza after they h
 ## GitHub Page Link
 <!-- LINK HERE -->
 ## Test Driven Development
-<!-- #### Describe: pizza()
+#### Describe: pizza()
 ##### Test: Test will confirm that the pizza constructor works. 
 ##### Code: let pizza1 = new pizza(topping1, topping2, topping3, size)
 ##### Expected Output: Pizza {
@@ -26,29 +26,14 @@ _This simple html website allows users to view the price of a pizza after they h
   topping2: 
   topping3:
   Size: 
-} -->
-<!-- #### Describe: pizza.pizzaCost()
+}
+#### Describe: pizza.pizzaCost()
 ##### Test: Test will check if the pizzaCost prototype works. 
-##### Code: pizza.pizzaCost(pizza1)
-##### Expected Output: "$10", "$15" -->
-##### Test: 
-##### Code: 
-##### Expected Output: 
- ##### Test: 
-##### Code: 
-##### Expected Output:
-##### Test: 
-##### Code: 
-##### Expected Output:
-##### Test: 
-##### Code: 
-##### Expected Output: 
-##### Test: 
-##### Code: 
-##### Expected Output:
-##### Test: 
-##### Code: 
-##### Expected Output:
+##### Code: pizza1.pizzaPrice();
+##### Expected Output: "$10", "$15"
+##### Test: Test will check if the user input for toppings can be used within the prototype function to determin the number of toppings. 
+##### Code: pizza.pizzaPrice();
+##### Expected Output: "$10" -> "$35"
 ## License
 _If you have any questions or concerns, please feel free to reach out to me [via email at: sandratena06@gmail.com](mailto:sandratena06@gmail.com) or request to make a contribution. Thank you!_ 
 #### The MIT License (MIT)

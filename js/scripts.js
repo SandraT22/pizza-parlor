@@ -5,7 +5,7 @@ function Pizza(toppings, size) {
   this.size = size;
 }
 
-// Pizza.prototype.
+
 
 Pizza.prototype.pizzaPrice = function() {
   const toppings1Small = "$10"
@@ -16,13 +16,13 @@ Pizza.prototype.pizzaPrice = function() {
   const toppings3Large = "$35"
   if (this.toppingsArray.length > 1 && this.size === "small") {
     return toppings3Small;
-  } else if (this.toppingsArray.length <= 1 && this.size === "small") {
+  } else if (this.toppingsArray.length === 1 && this.size === "small") {
     return toppings1Small;
-  } else if (this.toppingsArray.length <= 1 && this.size === "medium") {
+  } else if (this.toppingsArray.length === 1 && this.size === "medium") {
     return toppings1Medium;
   } else if (this.toppingsArray.length > 1 && this.size === "medium") {
     return toppings3Medium;
-  } else if (this.toppingsArray.length <= 1 && this.size === "large") {
+  } else if (this.toppingsArray.length === 1 && this.size === "large") {
     return toppings1Large;
   } else if (this.toppingsArray.length > 1 && this.size === "large") {
     return toppings3Large;
@@ -31,8 +31,6 @@ Pizza.prototype.pizzaPrice = function() {
   }
 }
 
-// let pizza1 = new Pizza("3", "pepperoni", "cheese", "pineapple", "small");
-// let pizza2 = new Pizza("1", "pepperoni", "small");
 
 //UI Logic
 
