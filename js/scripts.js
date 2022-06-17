@@ -42,13 +42,9 @@ $(document).ready(function() {
       const allToppings = $(this).val();
       toppings.push(allToppings);
     })
-      console.log(toppings);
     const pizzaSize = $("select#size").val();
-      console.log(pizzaSize);
     let pizzaOrder = new Pizza(toppings, pizzaSize);
-    console.log(pizzaOrder);
     let pizzaOrderPrice = pizzaOrder.pizzaPrice();
-    console.log(pizzaOrderPrice)
     $("#pizzaPrice").append("<p>" + "Pizza Price:" + pizzaOrderPrice + "</p>");
   })
 });
