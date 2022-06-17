@@ -53,5 +53,8 @@ $(document).ready(function() {
     let pizzaOrder = new Pizza(toppings, crust, pizzaSize);
     let pizzaOrderPrice = pizzaOrder.pizzaPrice();
     $("#pizzaPrice").append("<p>" + "Pizza Price: $" + pizzaOrderPrice + "</p>");
+    setInterval(function() {
+      $("#pizzaPrice").remove();
+    }, 5000);
   })
 });
