@@ -36,15 +36,15 @@ Pizza.prototype.pizzaPrice = function() {
 //UI Logic
 
 $(document).ready(function() {
-  $("from#pizzaOrder").submit(function(event) {
+  $("form#pizzaOrder").submit(function(event) {
     event.preventDefault();
     const toppingsNumber = $("select#toppingsNumber").val();
     const toppings = $("input:checkbox[name=toppings]:checked").val();
     const pizzaSize = $("select#size").val();
-
+    console.log("testing");
     let pizzaOrder = new Pizza(toppingsNumber, pizzaSize);
+    console.log(pizzaOrder);
     let pizzaOrderPrice = pizzaOrder.pizzaPrice();
-    console.log(pizzaOrderPrice);
     $("#pizzaPrice").append("<p>" + "Pizza Price:" + pizzaOrderPrice + "</p>");
   })
 });
