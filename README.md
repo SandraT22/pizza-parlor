@@ -16,7 +16,7 @@ _This simple html website allows users to choose between one and three pizza top
 ## Known Bugs
 * No known bugs
 ## GitHub Page Link
-<!-- LINK HERE -->
+https://sandrat22.github.io/pizza-parlor/
 ## Test Driven Development
 #### Describe: pizza()
 ##### Test: Test will confirm that the pizza constructor works. 
