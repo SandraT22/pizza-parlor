@@ -16,11 +16,13 @@ h1 {
   font-family: 'Prata', serif;
   font-size: 3rem;
   text-align: center;
+  background-color: white;
 }
 
 h3 {
- color: gray;
+ color: rgb(114,160,193);
  text-align: center;
+ background-color: antiquewhite;
 }
 
 #pizzaPrice {
@@ -31,5 +33,11 @@ button {
   background-color: rgb(114,160,193);
   border-radius: 1rem;
 }
+ form {
+   background-color: white;
+ }
 
+ h6 {
+   background-color: antiquewhite;
+ }
  
