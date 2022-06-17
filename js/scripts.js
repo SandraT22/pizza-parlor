@@ -38,9 +38,9 @@ let pizza2 = new Pizza("1", "pepperoni", "small");
 $(document).ready(function() {
   $("from#pizzaOrder").submit(function(event) {
     event.preventDefaunt();
-    const toppingsNumber = 
-    const toppings = 
-    const pizzaSize = 
+    const toppingsNumber = $("select#toppingsNumber").val();
+    const toppings = $("input:checkbox[name=toppings]:checked").val();
+    const pizzaSize = $("select#size").val();
     let pizzaOrder = new Pizza(toppingsNumber, pizzaSize);
     let pizzaOrderPrice = pizzaOrder.pizzaPrice();
     $("#pizzaPrice").append("<p>" + "Pizza Price:" + pizzaOrderPrice + "</p>");
