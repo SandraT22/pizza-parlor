@@ -34,6 +34,9 @@ _This simple html website allows users to view the price of a pizza after they h
 ##### Test: Test will check if the user input for toppings can be used within the prototype function to determin the number of toppings. 
 ##### Code: pizza.pizzaPrice();
 ##### Expected Output: "$10" -> "$35"
+##### Test: Test will check if the user input for crust can be used within the prototype function to add an extra charge to the total depending on their choice. 
+##### Code: pizza.pizzaPrice();
+##### Expected Output: "$12" -> "$39"
 ## License
 _If you have any questions or concerns, please feel free to reach out to me [via email at: sandratena06@gmail.com](mailto:sandratena06@gmail.com) or request to make a contribution. Thank you!_ 
 #### The MIT License (MIT)
